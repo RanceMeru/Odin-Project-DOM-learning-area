@@ -27,11 +27,32 @@
     </div>
 
     <ul>
+      <!--Step 6-->
+      <li>
+        <span></span>
+      <button>Delete</button>
+      </li>
+      
 
     </ul>
 
     <script>
+        const list =  document.querySelector("ul");
+        const input= document.querySelector("input");
+        const button = document.querySelector("button");
+          //step 9 possible solution
+         list.appendChild("item");
 
+        //step 8 all input delete
+        input.textContent = "Delete";
+
+        button.addEventListener("click", function(){
+
+          const currentValue = document.querySelector("input");
+
+          input.value = "Delete"; //or text content
+
+        });
     </script>
   </body>
 </html>
